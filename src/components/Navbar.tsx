@@ -142,6 +142,12 @@ export function Navbar() {
             >
               WEBP
             </Link>
+            <Link
+              to="/add-image-to-pdf"
+              className={`quick-link ${location.pathname === '/add-image-to-pdf' ? 'active' : ''}`}
+            >
+              Add to PDF
+            </Link>
           </div>
         </div>
 

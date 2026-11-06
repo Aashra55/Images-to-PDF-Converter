@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ConversionPage } from './pages/ConversionPage';
+import { AddImageToPdfPage } from './pages/AddImageToPdfPage';
 import './App.css';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
             {/* Dedicated route for WEBP files */}
             <Route path="/webp-to-pdf" element={<ConversionPage />} />
+
+            {/* Brand New Tool: Add Image to PDF */}
+            <Route path="/add-image-to-pdf" element={<AddImageToPdfPage />} />
 
             {/* Fallback to homepage */}
             <Route path="*" element={<Navigate to="/" replace />} />

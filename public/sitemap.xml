@@ -39,4 +39,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Dedicated Add Image to PDF Tool -->
+  <url>
+    <loc>https://images-to-pdf-converter-5b9b.vercel.app/add-image-to-pdf</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

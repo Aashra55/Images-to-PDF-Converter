@@ -1,0 +1,381 @@
+/* Add Image to PDF Component Styles */
+.add-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.step-workflow-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-workflow-card.secondary-card {
+  background: #1a2436;
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.step-badge-indicator {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.step-header-title {
+  margin: 0 0 6px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.step-header-desc {
+  margin: 0 0 24px 0;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  max-width: 520px;
+}
+
+.pdf-drop-zone,
+.image-drop-zone {
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+}
+
+/* PDF Summary Strip */
+.pdf-summary-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e293b;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  gap: 16px;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.pdf-icon-badge {
+  font-size: 2rem;
+  background: rgba(16, 185, 129, 0.12);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.pdf-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.pdf-name {
+  font-weight: 600;
+  color: #f1f5f9;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.pdf-meta-pill {
+  font-size: 0.8rem;
+  color: #34d399;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.change-file-btn {
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.change-file-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+/* Configuration Panel */
+.configuration-panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.config-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.config-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.change-image-subtle-btn {
+  background: rgba(99, 102, 241, 0.12);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.change-image-subtle-btn:hover {
+  background: rgba(99, 102, 241, 0.25);
+  color: #ffffff;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Selected Image Card */
+.selected-image-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-preview-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+.image-preview-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.image-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.image-card-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-card-dims {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Form Controls */
+.controls-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.label-with-val {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.val-pill {
+  font-size: 0.78rem;
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.styled-select {
+  background: #0f172a;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.styled-select:focus {
+  border-color: #6366f1;
+}
+
+.specific-page-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.styled-number-input {
+  background: #0f172a;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  width: 70px;
+  outline: none;
+}
+
+.styled-number-input:focus {
+  border-color: #6366f1;
+}
+
+.styled-range {
+  width: 100%;
+  accent-color: #6366f1;
+  cursor: pointer;
+}
+
+/* Merge Action Bar */
+.merge-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(51, 65, 85, 0.5);
+  flex-wrap: wrap;
+}
+
+.merge-pdf-btn {
+  margin: 0;
+}
+
+.reset-workflow-btn {
+  background: transparent;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  padding: 14px 24px;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-workflow-btn:hover:not(:disabled) {
+  color: #f1f5f9;
+  border-color: #64748b;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.format-notice-banner.error-state {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+@media (max-width: 768px) {
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-image-card {
+    max-width: 200px;
+  }
+
+  .pdf-summary-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .change-file-btn {
+    align-self: flex-end;
+  }
+
+  .merge-action-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .merge-pdf-btn,
+  .reset-workflow-btn {
+    width: 100%;
+  }
+}

@@ -371,6 +371,77 @@ export const SEO_ROUTES_CONFIG: Record<string, RouteSEOConfig> = {
         answer: 'Yes, it is 100% free with no registration, no subscription, and no watermarks.'
       }
     ]
+  },
+  '/add-image-to-pdf': {
+    path: '/add-image-to-pdf',
+    slug: 'add-image',
+    name: 'Add Image to PDF',
+    shortName: 'Add to PDF',
+    badge: 'Insert & Overlay',
+    icon: '➕',
+    documentTitle: 'Add Image to PDF Online - 100% Free',
+    metaDescription: 'Easily insert, overlay, stamp, or attach JPG and PNG images onto existing PDF documents online. 100% free, client-side privacy, and no file uploads.',
+    headingPrefix: 'Add Image to ',
+    headingHighlight: 'PDF Online',
+    subheading: 'Insert, stamp, or overlay JPG and PNG images onto any existing PDF document 100% free with complete privacy.',
+    fileAccept: '.pdf,application/pdf',
+    acceptedTypesLabel: 'PDF Documents (.pdf)',
+    seoHeading: 'Free Online Tool to Add Images into Existing PDFs',
+    seoDescription: 'Need to add a signature, stamp, photo, or logo into an existing PDF document? Our browser-based tool allows you to insert and overlay images onto any page of your PDF without third-party cloud uploads or paid software subscriptions.',
+    privacySummary: 'Your PDF documents and personal images never leave your computer or smartphone. All PDF modifications and image embedding operations occur entirely within your local browser runtime using WebAssembly and client-side JavaScript. No file uploads, no tracking, and 100% confidentiality.',
+    features: [
+      {
+        icon: '🔒',
+        title: 'Zero Server Uploads',
+        description: 'Both your PDF and images are processed in-memory directly on your device.'
+      },
+      {
+        icon: '🎯',
+        title: 'Flexible Page Placement',
+        description: 'Place images on specific pages, all pages, or append as a new page.'
+      },
+      {
+        icon: '✍️',
+        title: 'Signatures & Stamps',
+        description: 'Perfect for adding transparent PNG signatures, company logos, and official stamps.'
+      },
+      {
+        icon: '⚡',
+        title: 'Instant Download',
+        description: 'Export your updated PDF file instantly with zero watermarks or signup requirements.'
+      }
+    ],
+    steps: [
+      {
+        stepNumber: '01',
+        title: 'Upload Existing PDF',
+        description: 'Select or drag your PDF document into the upload dropzone to inspect pages.'
+      },
+      {
+        stepNumber: '02',
+        title: 'Upload Image to Insert',
+        description: 'Select the JPG or PNG image, signature, or photo you want to place onto the document.'
+      },
+      {
+        stepNumber: '03',
+        title: 'Configure & Save',
+        description: 'Select target page, position, and sizing, then click "Insert & Download PDF".'
+      }
+    ],
+    faq: [
+      {
+        question: 'Can I add transparent PNG signatures to my PDF?',
+        answer: 'Yes! Transparent PNG files are fully supported, making it easy to sign contracts or add transparent watermarks without white backgrounds.'
+      },
+      {
+        question: 'Does this tool upload my PDF to any server?',
+        answer: 'No. The entire process runs locally in your browser using pdf-lib. Your documents remain strictly on your device.'
+      },
+      {
+        question: 'Can I choose which page the image appears on?',
+        answer: 'Yes. You can select Page 1, Last Page, any specific page number, or apply the image to all pages simultaneously.'
+      }
+    ]
   }
 };
 
